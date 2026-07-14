@@ -1,0 +1,19 @@
+[
+  {
+    "title": "PerfTrace Engine",
+    "subtitle": "C++ Workload Log Parser & Benchmarking Tool",
+    "period": "2025",
+    "description": "A C++17 command-line tool that parses workload logs, runtime events, and failure records to analyze performance bottlenecks across repeated runs.",
+    "highlights": [
+      "Core parser built with STL containers, file I/O, timestamp validation, error handling, and structured event aggregation for runtime, throughput, memory, and failure metrics",
+      "CMake build with gdb debugging, AddressSanitizer, Valgrind, and clang-tidy checks to catch memory errors and unsafe parsing patterns",
+      "Benchmark and regression test suite covering malformed logs, missing fields, duplicate events, invalid timestamps, and oversized records"
+    ],
+    "tech": ["C++17", "CMake", "STL", "AddressSanitizer", "Valgrind", "clang-tidy", "gdb"],
+    "links": {
+      "github": "",
+      "demo": ""
+    },
+    "featured": true
+  }
+]

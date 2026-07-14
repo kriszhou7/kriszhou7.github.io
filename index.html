@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kris Zhou — Software Engineer</title>
+<meta name="description" content="Kris (Qi) Zhou — Software engineer & MS Data Science student at University of Washington. Python, Go, C++, backend systems and data pipelines.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo">kris<span class="dot">.</span>zhou</div>
+    <div class="nav-links">
+      <a href="#experience">experience</a>
+      <a href="#projects">projects</a>
+      <a href="#education">education</a>
+      <a href="#contact">contact</a>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">◐</button>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+
+  <section class="hero">
+    <div class="hero-eyebrow">whoami</div>
+    <h1>Kris (Qi) Zhou</h1>
+    <p class="role">Software Engineer · MS Data Science &amp; AI @ University of Washington</p>
+    <p class="bio">
+      I build backend systems and data pipelines — from validation-heavy batch workflows processing
+      thousands of runs, to C++ tooling for parsing and benchmarking. Currently studying Data Science &amp; AI
+      at UW, with hands-on experience across research systems, investment banking data infrastructure, and
+      economics research computing.
+    </p>
+    <div class="hero-links">
+      <a href="https://github.com/kriszhou7" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:kriszhou_7z@outlook.com">Email</a>
+      <a href="#" id="resume-link">Resume</a>
+    </div>
+  </section>
+
+  <section class="block" id="skills">
+    <h2 class="section-title"><span class="num">01.</span> Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-cat">
+        <h3>Languages</h3>
+        <div class="tag-row">
+          <span class="tag">Python</span><span class="tag">Go</span><span class="tag">Java</span>
+          <span class="tag">JavaScript</span><span class="tag">C</span><span class="tag">C++</span>
+          <span class="tag">SQL</span><span class="tag">Bash</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h3>Backend &amp; Cloud</h3>
+        <div class="tag-row">
+          <span class="tag">FastAPI</span><span class="tag">Spring Boot</span><span class="tag">AWS (EC2, S3)</span>
+          <span class="tag">Docker</span><span class="tag">Linux</span><span class="tag">Git</span><span class="tag">GitHub Actions</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h3>Data &amp; AI</h3>
+        <div class="tag-row">
+          <span class="tag">PostgreSQL</span><span class="tag">MongoDB</span><span class="tag">Pandas</span>
+          <span class="tag">NumPy</span><span class="tag">PyTorch</span><span class="tag">Hugging Face</span><span class="tag">Langflow</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h3>Languages Spoken</h3>
+        <div class="tag-row">
+          <span class="tag">Mandarin</span><span class="tag">English</span><span class="tag">Turkish</span><span class="tag">French</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="experience">
+    <h2 class="section-title"><span class="num">02.</span> Experience</h2>
+
+    <div class="timeline-item">
+      <div class="timeline-header">
+        <div><span class="timeline-role">Software Engineer Intern</span> · <span class="timeline-org">Industrial Securities Co., Ltd.</span></div>
+        <div class="timeline-period">Jan 2025 – Sep 2025</div>
+      </div>
+      <div class="timeline-loc">Research Systems Team · Beijing, China</div>
+      <ul>
+        <li>Built a Python-based backend workflow converting raw time-series files into structured inputs, executing 1,300+ config-driven runs, storing results in SQL tables for review.</li>
+        <li>Developed batch-run scripts managing input paths, run configurations, output folders, execution status, and failure logs across repeated workloads.</li>
+        <li>Added validation checks for missing tickers, broken links, date mismatches, and stock split / dividend adjustments before each run.</li>
+        <li>Used Git to version scripts and run configs, making prior experiments reproducible and easier to compare.</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-header">
+        <div><span class="timeline-role">Data Systems Intern</span> · <span class="timeline-org">Guotai Haitong Securities</span></div>
+        <div class="timeline-period">Jan 2024 – May 2024</div>
+      </div>
+      <div class="timeline-loc">Investment Banking Division · Beijing, China</div>
+      <ul>
+        <li>Built SQL- and Excel-based internal trackers for due diligence source files, bank statements, confirmations, and transaction materials.</li>
+        <li>Used Python to normalize company names, financial fields, and date formats before loading into structured review tables.</li>
+        <li>Wrote SQL queries flagging missing confirmations, unmatched dates, duplicate entities, and inconsistent naming.</li>
+        <li>Prepared review-ready tables with source references, helping senior team members trace data issues faster.</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-header">
+        <div><span class="timeline-role">Research Data Systems Assistant</span> · <span class="timeline-org">Institute of Economics, Chinese Academy of Social Sciences</span></div>
+        <div class="timeline-period">Mar 2023 – Aug 2023</div>
+      </div>
+      <div class="timeline-loc">Beijing, China</div>
+      <ul>
+        <li>Built a Python and SQL pipeline consolidating 8 raw datasets into 50+ analysis-ready tables for repeated research analysis.</li>
+        <li>Created a transformation layer with 120+ variable mappings, standardizing IDs, dates, and category labels.</li>
+        <li>Wrote 20 reusable SQL templates for recurring summaries by population group, age range, region, and time period.</li>
+        <li>Added 25 validation checks for missing values, duplicates, and invalid records, flagging 600+ exception records.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block" id="projects">
+    <h2 class="section-title"><span class="num">03.</span> Projects</h2>
+    <div id="projects-list">
+      <div class="projects-empty">loading projects…</div>
+    </div>
+  </section>
+
+  <section class="block" id="education">
+    <h2 class="section-title"><span class="num">04.</span> Education</h2>
+
+    <div class="edu-item">
+      <div class="edu-left">
+        <div class="school">University of Washington</div>
+        <div class="degree">M.S. in Information Management — Data Science &amp; AI Specialization</div>
+      </div>
+      <div class="edu-right">
+        Sept 2025 – June 2027<br>Seattle, WA<br><span class="gpa">GPA 3.9 / 4.0</span>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-left">
+        <div class="school">Peking University</div>
+        <div class="degree">Minor in Economics</div>
+      </div>
+      <div class="edu-right">
+        Sept 2023 – June 2025<br>Beijing, China<br><span class="gpa">GPA 3.8 / 4.0</span>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-left">
+        <div class="school">Beijing International Studies University</div>
+        <div class="degree">B.A. in Turkish</div>
+      </div>
+      <div class="edu-right">
+        Sept 2021 – June 2025<br>Beijing, China<br><span class="gpa">GPA 3.9 / 4.0</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="contact">
+    <h2 class="section-title"><span class="num">05.</span> Contact</h2>
+    <p class="bio">
+      Reach me at <a href="mailto:kriszhou_7z@outlook.com">kriszhou_7z@outlook.com</a> or on
+      <a href="https://github.com/kriszhou7" target="_blank" rel="noopener">GitHub @kriszhou7</a>.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <div>© <span id="year"></span> Kris Zhou · built with HTML/CSS/JS · deployed on GitHub Pages</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
