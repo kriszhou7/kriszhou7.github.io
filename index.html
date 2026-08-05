@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kris Zhou — Software Engineer</title>
-<meta name="description" content="Kris (Qi) Zhou — Software engineer & MS Data Science student at University of Washington. Python, Go, C++, backend systems and data pipelines.">
+<meta name="description" content="Kris (Qi) Zhou — Software engineer & MS Data Science student at University of Washington. Java, Kafka/Flink, Spring Boot, React — developer tooling, distributed systems, and full-stack platforms.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -42,23 +42,26 @@
       <div class="skill-cat">
         <h3>Languages</h3>
         <div class="tag-row">
-          <span class="tag">Python</span><span class="tag">Go</span><span class="tag">Java</span>
-          <span class="tag">JavaScript</span><span class="tag">C</span><span class="tag">C++</span>
-          <span class="tag">SQL</span><span class="tag">Bash</span>
+          <span class="tag">Python</span><span class="tag">Java</span><span class="tag">JavaScript</span>
+          <span class="tag">TypeScript</span><span class="tag">Go</span><span class="tag">C/C++</span>
+          <span class="tag">SQL</span><span class="tag">Shell</span>
         </div>
       </div>
       <div class="skill-cat">
-        <h3>Backend &amp; Cloud</h3>
+        <h3>Frameworks</h3>
         <div class="tag-row">
-          <span class="tag">FastAPI</span><span class="tag">Spring Boot</span><span class="tag">AWS (EC2, S3)</span>
-          <span class="tag">Docker</span><span class="tag">Linux</span><span class="tag">Git</span><span class="tag">GitHub Actions</span>
+          <span class="tag">Django</span><span class="tag">FastAPI</span><span class="tag">Spring Cloud</span>
+          <span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">React.js</span>
+          <span class="tag">Next.js</span><span class="tag">Vue.js</span><span class="tag">PyTorch</span><span class="tag">Hugging Face</span>
         </div>
       </div>
       <div class="skill-cat">
-        <h3>Data &amp; AI</h3>
+        <h3>Infrastructure &amp; Data</h3>
         <div class="tag-row">
-          <span class="tag">PostgreSQL</span><span class="tag">MongoDB</span><span class="tag">Pandas</span>
-          <span class="tag">NumPy</span><span class="tag">PyTorch</span><span class="tag">Hugging Face</span><span class="tag">Langflow</span>
+          <span class="tag">AWS (EKS, EC2, S3)</span><span class="tag">Google Cloud</span><span class="tag">Docker</span>
+          <span class="tag">Kubernetes</span><span class="tag">Linux</span><span class="tag">PostgreSQL</span>
+          <span class="tag">MongoDB</span><span class="tag">Redis</span><span class="tag">Elasticsearch</span>
+          <span class="tag">Kafka</span><span class="tag">Jenkins</span><span class="tag">GitHub Actions</span><span class="tag">Git</span>
         </div>
       </div>
       <div class="skill-cat">
@@ -76,42 +79,41 @@
     <div class="timeline-item">
       <div class="timeline-header">
         <div><span class="timeline-role">Software Engineer Intern</span> · <span class="timeline-org">Industrial Securities Co., Ltd.</span></div>
-        <div class="timeline-period">Jan 2025 – Sep 2025</div>
+        <div class="timeline-period">Mar 2025 – Sep 2025</div>
       </div>
-      <div class="timeline-loc">Research Systems Team · Beijing, China</div>
+      <div class="timeline-loc">Developer Tools &amp; Experimentation Platform · Beijing, China</div>
       <ul>
-        <li>Built a Python-based backend workflow converting raw time-series files into structured inputs, executing 1,300+ config-driven runs, storing results in SQL tables for review.</li>
-        <li>Developed batch-run scripts managing input paths, run configurations, output folders, execution status, and failure logs across repeated workloads.</li>
-        <li>Added validation checks for missing tickers, broken links, date mismatches, and stock split / dividend adjustments before each run.</li>
-        <li>Used Git to version scripts and run configs, making prior experiments reproducible and easier to compare.</li>
+        <li>Built internal Java tooling for AST-based static analysis with JavaParser across a 200K+ LOC codebase spanning 50+ services, eliminating most manual code inspection and giving reviewers repeatable verification on every change.</li>
+        <li>Redesigned dependency graph traversal on PostgreSQL to support downstream impact analysis before release, reducing analysis time by 2x and lowering peak memory usage by 40%.</li>
+        <li>Delivered real-time monitoring for 3K+ concurrent A/B experiments using Kafka and Flink, surfacing rollout metrics with sub-second latency so regressions could be caught quickly.</li>
+        <li>Worked with reviewers and platform users to refine analysis rules, failure reports, and monitoring outputs so engineering teams could understand code impact before deployment.</li>
       </ul>
     </div>
 
     <div class="timeline-item">
       <div class="timeline-header">
-        <div><span class="timeline-role">Data Systems Intern</span> · <span class="timeline-org">Guotai Haitong Securities</span></div>
+        <div><span class="timeline-role">Full-Stack Software Engineer Intern</span> · <span class="timeline-org">Guotai Haitong Securities</span></div>
         <div class="timeline-period">Jan 2024 – May 2024</div>
       </div>
-      <div class="timeline-loc">Investment Banking Division · Beijing, China</div>
+      <div class="timeline-loc">Market Data Platform · Beijing, China</div>
       <ul>
-        <li>Built SQL- and Excel-based internal trackers for due diligence source files, bank statements, confirmations, and transaction materials.</li>
-        <li>Used Python to normalize company names, financial fields, and date formats before loading into structured review tables.</li>
-        <li>Wrote SQL queries flagging missing confirmations, unmatched dates, duplicate entities, and inconsistent naming.</li>
-        <li>Prepared review-ready tables with source references, helping senior team members trace data issues faster.</li>
+        <li>Built the backend for an equity price monitoring platform serving traders and analysts across multiple regions, ingesting Level 2 market data through Kafka and exposing services with Spring Boot and Spring Cloud.</li>
+        <li>Developed React and Redux Toolkit frontend views for real-time price monitoring, trend visualization, and manual-review replacement workflows.</li>
+        <li>Documented 40+ REST APIs with Swagger/OpenAPI and maintained test coverage with JUnit 5 and Apache JMeter for core service and performance checks.</li>
+        <li>Automated testing, image builds, and Kubernetes deployment through a self-hosted GitLab CE pipeline with dedicated runners.</li>
       </ul>
     </div>
 
     <div class="timeline-item">
       <div class="timeline-header">
-        <div><span class="timeline-role">Research Data Systems Assistant</span> · <span class="timeline-org">Institute of Economics, Chinese Academy of Social Sciences</span></div>
+        <div><span class="timeline-role">Research Assistant</span> · <span class="timeline-org">Institute of Economics, Chinese Academy of Social Sciences</span></div>
         <div class="timeline-period">Mar 2023 – Aug 2023</div>
       </div>
-      <div class="timeline-loc">Beijing, China</div>
+      <div class="timeline-loc">JVM Testing Systems · Beijing, China</div>
       <ul>
-        <li>Built a Python and SQL pipeline consolidating 8 raw datasets into 50+ analysis-ready tables for repeated research analysis.</li>
-        <li>Created a transformation layer with 120+ variable mappings, standardizing IDs, dates, and category labels.</li>
-        <li>Wrote 20 reusable SQL templates for recurring summaries by population group, age range, region, and time period.</li>
-        <li>Added 25 validation checks for missing values, duplicates, and invalid records, flagging 600+ exception records.</li>
+        <li>Designed a Monte Carlo mutation strategy in Java over JVM bytecode execution paths, uncovering defects in production JVM implementations. Developed a coverage-guided evolutionary algorithm that steered mutants toward higher branch, code, and JVM instruction coverage.</li>
+        <li>Fuzzed HotSpot and OpenJ9 and diffed their execution behavior, surfacing 50+ defects including 3 critical issues reported upstream to the IBM OpenJ9 team.</li>
+        <li>Organized defect cases with triggering inputs, observed behavior, coverage signals, and reproduction notes for upstream review.</li>
       </ul>
     </div>
   </section>
