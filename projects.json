@@ -1,19 +1,10 @@
 [
   {
-    "title": "TeamFlow Hub",
-    "subtitle": "Full-Stack Product Collaboration Platform",
-    "period": "2025",
-    "description": "A full-stack product collaboration app with a React/TypeScript frontend and Java Spring Boot backend for managing feature requests, project tasks, user feedback, and release status.",
+    "title": "CodeGraph Copilot — Developer Infrastructure & Service Dependency Intelligence",
     "highlights": [
-      "Designed PostgreSQL tables and REST APIs for users, teams, projects, feature requests, assignments, comments, status history, and audit logs",
-      "Created responsive UI pages for request submission, task boards, search/filter views, role-based updates, error states, and accessibility-minded form validation",
-      "Added backend validation, frontend error handling, unit tests, API tests, and structured logs to improve reliability, debugging, and observability across the app"
-    ],
-    "tech": ["React", "TypeScript", "Java", "Spring Boot", "PostgreSQL", "REST API"],
-    "links": {
-      "github": "",
-      "demo": ""
-    },
-    "featured": true
+      "Built a Java/Python developer platform combining AST-based static analysis, graph traversal, and PostgreSQL dependency modeling to detect risky service changes, missing instrumentation, unused APIs, and validation-rule violations.",
+      "Designed PostgreSQL schemas for files, symbols, call edges, dependency paths, build records, validation rules, and issue fingerprints, enabling structured service-impact and failure analysis.",
+      "Integrated AI-assisted diagnostics over deterministic analysis to generate root-cause summaries, dependency-impact explanations, test suggestions, and CI/CD debugging guidance."
+    ]
   }
 ]

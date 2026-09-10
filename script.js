@@ -41,16 +41,27 @@ function renderProjects(projects) {
       if (p.links?.github) links.push(`<a href="${p.links.github}" target="_blank" rel="noopener">source →</a>`);
       if (p.links?.demo) links.push(`<a href="${p.links.demo}" target="_blank" rel="noopener">demo →</a>`);
 
+      const period = p.period
+        ? `<span class="project-period">${escapeHtml(p.period)}</span>`
+        : "";
+      const subtitle = p.subtitle
+        ? `<div class="project-subtitle">${escapeHtml(p.subtitle)}</div>`
+        : "";
+      const description = p.description
+        ? `<p class="project-desc">${escapeHtml(p.description)}</p>`
+        : "";
+      const tagRow = tags ? `<div class="tag-row">${tags}</div>` : "";
+
       return `
         <div class="project-card">
           <div class="project-card-head">
             <h3 class="project-title">${escapeHtml(p.title)}</h3>
-            <span class="project-period">${escapeHtml(p.period || "")}</span>
+            ${period}
           </div>
-          <div class="project-subtitle">${escapeHtml(p.subtitle || "")}</div>
-          <p class="project-desc">${escapeHtml(p.description || "")}</p>
+          ${subtitle}
+          ${description}
           <ul>${highlights}</ul>
-          <div class="tag-row">${tags}</div>
+          ${tagRow}
           ${links.length ? `<div class="project-links">${links.join("")}</div>` : ""}
         </div>
       `;
