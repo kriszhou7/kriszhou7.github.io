@@ -14,7 +14,7 @@ themeToggle.addEventListener("click", () => {
 document.getElementById("year").textContent = new Date().getFullYear();
 
 // Render projects from projects.json
-fetch("projects.json")
+fetch("projects.json?v=20260910-2")
   .then((res) => res.json())
   .then((projects) => renderProjects(projects))
   .catch(() => {
