@@ -13,12 +13,6 @@ themeToggle.addEventListener("click", () => {
 // Footer year
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Resume link -> points at assets/resume.pdf if present
-document.getElementById("resume-link").addEventListener("click", (e) => {
-  e.preventDefault();
-  window.open("assets/resume.pdf", "_blank");
-});
-
 // Render projects from projects.json
 fetch("projects.json")
   .then((res) => res.json())

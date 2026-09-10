@@ -32,7 +32,7 @@
     <div class="hero-links">
       <a href="https://github.com/kriszhou7" target="_blank" rel="noopener">GitHub</a>
       <a href="mailto:kriszhou_7z@outlook.com">Email</a>
-      <a href="#" id="resume-link">Resume</a>
+      <a href="assets/resume.pdf" id="resume-link" target="_blank" rel="noopener">Resume</a>
     </div>
   </section>
 
@@ -78,15 +78,29 @@
 
     <div class="timeline-item">
       <div class="timeline-header">
+        <div><span class="timeline-role">Backend Software Engineer Intern</span> · <span class="timeline-org">Meituan</span></div>
+        <div class="timeline-period">Jun 2026 – Sep 2026</div>
+      </div>
+      <div class="timeline-loc">Core Local Commerce Engineering Platform · Shanghai, China</div>
+      <ul>
+        <li>Implemented 6 REST APIs in Java/Spring Boot for merchant promotion setup, rule validation, and eligibility checks, serving 10K+ requests per week across merchant-facing workflows and integrating with 4 internal services.</li>
+        <li>Profiled a read-heavy eligibility endpoint, eliminated redundant MySQL queries through composite indexing and query restructuring, and added a Redis cache-aside layer, cutting P95 latency by 31% (210→145 ms).</li>
+        <li>Added 80+ JUnit 5 and MockMvc tests across 30+ REST endpoints, increasing core-module coverage from 69% to 85% while covering invalid requests, cache misses, database failures, and downstream-service timeouts.</li>
+        <li>Contributed to 2 technical design documents covering API contracts, schema changes, caching behavior, and rollback plans, and shipped 20+ reviewed code changes; used Cursor for codebase navigation and test scaffolding, validating generated changes through automated tests and CI checks.</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-header">
         <div><span class="timeline-role">Software Engineer Intern</span> · <span class="timeline-org">Industrial Securities Co., Ltd.</span></div>
         <div class="timeline-period">Mar 2025 – Sep 2025</div>
       </div>
-      <div class="timeline-loc">Developer Tools &amp; Experimentation Platform · Beijing, China</div>
+      <div class="timeline-loc">Developer Tools &amp; Platform Engineering · Beijing, China</div>
       <ul>
-        <li>Built internal Java tooling for AST-based static analysis with JavaParser across a 200K+ LOC codebase spanning 50+ services, eliminating most manual code inspection and giving reviewers repeatable verification on every change.</li>
-        <li>Redesigned dependency graph traversal on PostgreSQL to support downstream impact analysis before release, reducing analysis time by 2x and lowering peak memory usage by 40%.</li>
-        <li>Delivered real-time monitoring for 3K+ concurrent A/B experiments using Kafka and Flink, surfacing rollout metrics with sub-second latency so regressions could be caught quickly.</li>
-        <li>Worked with reviewers and platform users to refine analysis rules, failure reports, and monitoring outputs so engineering teams could understand code impact before deployment.</li>
+        <li>Built internal Java developer tooling for AST-based static analysis with JavaParser, running across a 200K+ LOC codebase spanning 50+ services to automate repeatable validation and reduce manual code inspection.</li>
+        <li>Redesigned PostgreSQL dependency-graph traversal algorithms used for downstream service-impact analysis, achieving 2× faster analysis and 40% lower peak memory.</li>
+        <li>Built real-time monitoring components supporting 3K+ concurrent test and experiment runs using Kafka and Flink, processing operational signals with sub-second latency.</li>
+        <li>Developed failure diagnostics, dependency-impact analysis, and validation workflows to surface risky service changes and troubleshoot regressions before production deployment.</li>
       </ul>
     </div>
 
@@ -97,23 +111,10 @@
       </div>
       <div class="timeline-loc">Market Data Platform · Beijing, China</div>
       <ul>
-        <li>Built the backend for an equity price monitoring platform serving traders and analysts across multiple regions, ingesting Level 2 market data through Kafka and exposing services with Spring Boot and Spring Cloud.</li>
-        <li>Developed React and Redux Toolkit frontend views for real-time price monitoring, trend visualization, and manual-review replacement workflows.</li>
-        <li>Documented 40+ REST APIs with Swagger/OpenAPI and maintained test coverage with JUnit 5 and Apache JMeter for core service and performance checks.</li>
-        <li>Automated testing, image builds, and Kubernetes deployment through a self-hosted GitLab CE pipeline with dedicated runners.</li>
-      </ul>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-header">
-        <div><span class="timeline-role">Research Assistant</span> · <span class="timeline-org">Institute of Economics, Chinese Academy of Social Sciences</span></div>
-        <div class="timeline-period">Mar 2023 – Aug 2023</div>
-      </div>
-      <div class="timeline-loc">JVM Testing Systems · Beijing, China</div>
-      <ul>
-        <li>Designed a Monte Carlo mutation strategy in Java over JVM bytecode execution paths, uncovering defects in production JVM implementations. Developed a coverage-guided evolutionary algorithm that steered mutants toward higher branch, code, and JVM instruction coverage.</li>
-        <li>Fuzzed HotSpot and OpenJ9 and diffed their execution behavior, surfacing 50+ defects including 3 critical issues reported upstream to the IBM OpenJ9 team.</li>
-        <li>Organized defect cases with triggering inputs, observed behavior, coverage signals, and reproduction notes for upstream review.</li>
+        <li>Developed Java/Spring Boot backend services for a real-time equity market-data platform, ingesting Level 2 streaming data through Kafka and supporting downstream monitoring and operational workflows.</li>
+        <li>Developed and documented 40+ REST API endpoints with Swagger/OpenAPI, supporting service integration and data exchange across backend and frontend applications.</li>
+        <li>Developed React/Redux interfaces for real-time market monitoring and operational workflows.</li>
+        <li>Built JUnit 5 regression tests and Apache JMeter performance tests for core services, and automated testing, container builds, and Kubernetes deployments through a self-hosted GitLab CI/CD pipeline.</li>
       </ul>
     </div>
   </section>
